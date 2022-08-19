@@ -1,11 +1,21 @@
-package Sequencial;
+package Selecao;
 
+import java.util.Scanner;
 public class Exercicio_01 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		System.out.println("Alo Mundo");
-		
+            try ( // TODO Auto-generated method stub
+                    Scanner entrada = new Scanner(System.in)) {
+                System.out.print("Digite o primeiro Número");
+                float numero1 = entrada.nextFloat();
+                System.out.print("Digite o segundo Número");
+                float numero2 = entrada.nextFloat();
+                if (numero1>numero2)
+                    System.out.println("O numero"+ numero1 +"é o maior");
+                
+                else
+                    System.out.println("O numero"+ numero2 +"é o maior");
+            }
 	}
 
 }

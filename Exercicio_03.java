@@ -1,17 +1,25 @@
-package Sequencial;
+package Selecao;
 
 import java.util.Scanner;
 public class Exercicio_03 {
 
 	public static void main(String[] args) {
             try ( // TODO Auto-generated method stub
-                    Scanner input = new Scanner(System.in)) {
-                System.out.print("Escreva um número");
-                int numero1 = input.nextInt();
-                System.out.print("Escreva outro número");
-                int numero2 = input.nextInt();
-                System.out.println("A Soma : "+ (numero1+numero2));
+                    Scanner entrada = new Scanner(System.in)) {
+                System.out.print("Qual seu sexo? digite M-masculino F-feminino");
+                String sexo = entrada.nextLine();
+                String masculino = "M";
+                String feminino = "F";
+                if (sexo.equals(masculino))
+                    System.out.println("M-Masculino");
+                else if (sexo.equals(feminino))
+                    System.out.println("F-Feminino");
+                else
+                    System.out.println("você digitou uma Letra errada");
             }
+					
+			
+			
 	}
 
 }
