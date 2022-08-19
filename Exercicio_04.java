@@ -1,24 +1,22 @@
-package Selecao;
+package Sequencial;
 
 import java.util.Scanner;
 public class Exercicio_04 {
 
 	public static void main(String[] args) {
             try ( // TODO Auto-generated method stub
-                    Scanner entrada = new Scanner(System.in)) {
-                System.out.print("Digite um ano com 4 digitos");
-                int ano = entrada.nextInt();
-                
-                if ((ano>999)&&(ano<10000))
-                    
-                    if ((((ano%4)==0)||(ano%400)==0)&&((ano%100)!=0))
-                        System.out.println("Este ano é bissexto");
-                    else
-                        System.out.println("Este ano não é bissexto");
-                else
-                    System.out.println("ERRO! Voce digitou um numero que não possui 4 digitos");
+                    Scanner input = new Scanner(System.in)) {
+                System.out.print("Escreva a Primeira nota: ");
+                int nota1 = input.nextInt();
+                System.out.print("Escreva a Segunda nota: ");
+                int nota2 = input.nextInt();
+                System.out.print("Escreva a Terceira nota: ");
+                int nota3 =input.nextInt();
+                System.out.print("Escreva a Quarta nota: ");
+                int nota4 = input.nextInt();
+                float media = (nota1 + nota2 +nota3+nota4)/4;
+                System.out.println("A Media: "+ media);
             }
 	}
-	
 
 }
